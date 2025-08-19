@@ -1,6 +1,6 @@
 // src/Profile.jsx
 import React, { useState, useEffect } from 'react';
-import SocialMediaIcon from './SocialMediaIcon'; // <-- Import the new component
+import SocialMediaIcon from '../assets/SocialMediaIcon'; // <-- Import the new component
 
 const API_URL = 'http://localhost:3000/api';
 
