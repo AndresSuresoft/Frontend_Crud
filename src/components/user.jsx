@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import '../user.css'
 const API_URL = 'http://localhost:3000/api/users';
 
 const Users = ({ onSelectUser }) => {
@@ -120,11 +120,10 @@ const Users = ({ onSelectUser }) => {
     };
 
     return (
-        <div>
+        <div className="users-container">
             <h1>Gestión de Usuarios</h1>
 
-            {/* Formulario de creación/edición */}
-            <form onSubmit={editingUser ? handleUpdate : handleSubmit}>
+            <form onSubmit={editingUser ? handleUpdate : handleSubmit} className="user-form">
                 <h2>{editingUser ? 'Editar Usuario' : 'Crear Usuario'}</h2>
                 <input
                     type="text"
@@ -171,11 +170,14 @@ const Users = ({ onSelectUser }) => {
                 {users.length > 0 ? (
                     users.map(user => (
                         <li key={user.id}>
-                            {user.firstName} {user.lastName} - {user.email}
-                            {/* Botón para ver el perfil */}
-                            <button onClick={() => onSelectUser(user.id)}>Ver Perfil</button>
-                            <button onClick={() => handleEdit(user)}>Editar</button>
-                            <button onClick={() => handleDelete(user.id)}>Eliminar</button>
+                            <div className="user-info">
+                                {user.firstName} {user.lastName} - {user.email}
+                            </div>
+                            <div className="user-actions">
+                                <button className="view-button" onClick={() => onSelectUser(user.id)}>Ver Perfil</button>
+                                <button className="edit-button" onClick={() => handleEdit(user)}>Editar</button>
+                                <button className="delete-button" onClick={() => handleDelete(user.id)}>Eliminar</button>
+                            </div>
                         </li>
                     ))
                 ) : (

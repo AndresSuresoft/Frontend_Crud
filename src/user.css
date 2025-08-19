@@ -1,0 +1,129 @@
+/* src/Users.css */
+
+/* Estilos generales del contenedor */
+.users-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.user-form h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos de los botones del formulario */
+.user-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-form button[type="submit"] {
+    background-color: #007bff;
+}
+
+.user-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.user-form button[type="button"] {
+    background-color: #6c757d;
+}
+
+.user-form button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos de la lista de usuarios */
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+/* Estilos de los botones de la lista */
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.user-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-actions .view-button {
+    background-color: #28a745;
+}
+
+.user-actions .view-button:hover {
+    background-color: #218838;
+}
+
+.user-actions .edit-button {
+    background-color: #ffc107;
+}
+
+.user-actions .edit-button:hover {
+    background-color: #e0a800;
+}
+
+.user-actions .delete-button {
+    background-color: #dc3545;
+}
+
+.user-actions .delete-button:hover {
+    background-color: #c82333;
+}

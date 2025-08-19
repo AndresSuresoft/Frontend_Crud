@@ -1,0 +1,129 @@
+/* src/Profile.css */
+.profile-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-container h1,
+.profile-container h2,
+.profile-container h3 {
+    color: #1a202c;
+    font-weight: bold;
+}
+
+.profile-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profile-container h3 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+.profile-container p {
+    color: #718096;
+    margin: 5px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+/* Botón de Volver */
+.back-button {
+    padding: 8px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #4a5568;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #f7fafc;
+    transform: translateY(-2px);
+}
+
+/* Formulario de Redes Sociales */
+.social-media-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-form input {
+    padding: 10px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.social-media-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #48bb78;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-media-form button:hover {
+    background-color: #38a169;
+}
+
+/* Lista de Redes Sociales */
+.social-media-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.social-media-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.social-media-list a {
+    text-decoration: none;
+    color: #4a5568;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-media-list a:hover {
+    color: #2d3748;
+}
+
+/* Botón de Eliminar en la lista */
+.social-media-list button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f56565;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-media-list button:hover {
+    background-color: #e53e3e;
+}

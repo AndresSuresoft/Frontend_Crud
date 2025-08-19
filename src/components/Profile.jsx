@@ -1,7 +1,7 @@
 // src/Profile.jsx
 import React, { useState, useEffect } from 'react';
 import SocialMediaIcon from '../assets/SocialMediaIcon'; // <-- Import the new component
-
+import '../profile.css'
 const API_URL = 'http://localhost:3000/api';
 
 const Profile = ({ userId }) => {
@@ -85,7 +85,7 @@ const Profile = ({ userId }) => {
     }
 
     return (
-        <div>
+        <div className="profile-container">
             <h1>Perfil de Usuario</h1>
             <h3>{user.firstName} {user.lastName}</h3>
             <p>Email: {user.email}</p>
@@ -95,7 +95,7 @@ const Profile = ({ userId }) => {
 
             <h2>Redes Sociales</h2>
             {socialMedia.length > 0 ? (
-                <ul>
+                <ul className="social-media-list">
                     {socialMedia.map(sm => (
                         <li key={sm.id}>
                             <SocialMediaIcon name={sm.name} /> {/* <-- Use the component here */}
@@ -111,7 +111,7 @@ const Profile = ({ userId }) => {
             )}
 
             <h3>Añadir Red Social</h3>
-            <form onSubmit={handleCreateSocialMedia}>
+            <form onSubmit={handleCreateSocialMedia} className="social-media-form">
                 <input
                     type="text"
                     name="name"
